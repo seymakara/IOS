@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3BD3CEC2200ECC0500421231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3CEC1200ECC0500421231 /* AppDelegate.swift */; };
-		3BD3CEC4200ECC0500421231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3CEC3200ECC0500421231 /* ViewController.swift */; };
+		3BD3CEC4200ECC0500421231 /* BucketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3CEC3200ECC0500421231 /* BucketListViewController.swift */; };
 		3BD3CEC7200ECC0500421231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD3CEC5200ECC0500421231 /* Main.storyboard */; };
 		3BD3CEC9200ECC0500421231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD3CEC8200ECC0500421231 /* Assets.xcassets */; };
 		3BD3CECC200ECC0500421231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD3CECA200ECC0500421231 /* LaunchScreen.storyboard */; };
 		3BD3CED7200ECC0500421231 /* bucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3CED6200ECC0500421231 /* bucketListTests.swift */; };
 		3BD3CEE2200ECC0500421231 /* bucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3CEE1200ECC0500421231 /* bucketListUITests.swift */; };
+		3BD3CEF0200F1D6600421231 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3CEEF200F1D6600421231 /* AddItemTableViewController.swift */; };
+		3BD3CEF4200F2DA900421231 /* AddItemTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3CEF3200F2DA900421231 /* AddItemTableViewControllerDelegate.swift */; };
+		3BD3CEF7200FFE7A00421231 /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3CEF5200FFE7A00421231 /* BucketList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		3BD3CEBE200ECC0500421231 /* bucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD3CEC1200ECC0500421231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BD3CEC3200ECC0500421231 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BD3CEC3200ECC0500421231 /* BucketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewController.swift; sourceTree = "<group>"; };
 		3BD3CEC6200ECC0500421231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BD3CEC8200ECC0500421231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BD3CECB200ECC0500421231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		3BD3CEDD200ECC0500421231 /* bucketListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bucketListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD3CEE1200ECC0500421231 /* bucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bucketListUITests.swift; sourceTree = "<group>"; };
 		3BD3CEE3200ECC0500421231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BD3CEEF200F1D6600421231 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		3BD3CEF3200F2DA900421231 /* AddItemTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewControllerDelegate.swift; sourceTree = "<group>"; };
+		3BD3CEF6200FFE7A00421231 /* BucketList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		3BD3CEC0200ECC0500421231 /* bucketList */ = {
 			isa = PBXGroup;
 			children = (
+				3BD3CEEF200F1D6600421231 /* AddItemTableViewController.swift */,
 				3BD3CEC1200ECC0500421231 /* AppDelegate.swift */,
-				3BD3CEC3200ECC0500421231 /* ViewController.swift */,
+				3BD3CEF5200FFE7A00421231 /* BucketList.xcdatamodeld */,
+				3BD3CEC3200ECC0500421231 /* BucketListViewController.swift */,
+				3BD3CEF3200F2DA900421231 /* AddItemTableViewControllerDelegate.swift */,
 				3BD3CEC5200ECC0500421231 /* Main.storyboard */,
 				3BD3CEC8200ECC0500421231 /* Assets.xcassets */,
 				3BD3CECA200ECC0500421231 /* LaunchScreen.storyboard */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BD3CEC4200ECC0500421231 /* ViewController.swift in Sources */,
+				3BD3CEC4200ECC0500421231 /* BucketListViewController.swift in Sources */,
 				3BD3CEC2200ECC0500421231 /* AppDelegate.swift in Sources */,
+				3BD3CEF7200FFE7A00421231 /* BucketList.xcdatamodeld in Sources */,
+				3BD3CEF4200F2DA900421231 /* AddItemTableViewControllerDelegate.swift in Sources */,
+				3BD3CEF0200F1D6600421231 /* AddItemTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 663CTGYRHE;
 				INFOPLIST_FILE = bucketList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = seymaakin88gmail.bucketList;
@@ -441,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 663CTGYRHE;
 				INFOPLIST_FILE = bucketList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = seymaakin88gmail.bucketList;
@@ -552,6 +566,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3BD3CEF5200FFE7A00421231 /* BucketList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3BD3CEF6200FFE7A00421231 /* BucketList.xcdatamodel */,
+			);
+			currentVersion = 3BD3CEF6200FFE7A00421231 /* BucketList.xcdatamodel */;
+			path = BucketList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3BD3CEB6200ECC0500421231 /* Project object */;
 }
