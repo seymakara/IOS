@@ -14,6 +14,7 @@
 		3B27D36A2016701E0000F6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B27D3682016701E0000F6A2 /* LaunchScreen.storyboard */; };
 		3B27D3752016701F0000F6A2 /* starWarsEncyclopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27D3742016701F0000F6A2 /* starWarsEncyclopediaTests.swift */; };
 		3B27D3802016701F0000F6A2 /* starWarsEncyclopediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27D37F2016701F0000F6A2 /* starWarsEncyclopediaUITests.swift */; };
+		3B27D3902016B4D70000F6A2 /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27D38F2016B4D70000F6A2 /* FilmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3B27D37B2016701F0000F6A2 /* starWarsEncyclopediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starWarsEncyclopediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B27D37F2016701F0000F6A2 /* starWarsEncyclopediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starWarsEncyclopediaUITests.swift; sourceTree = "<group>"; };
 		3B27D3812016701F0000F6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B27D38F2016B4D70000F6A2 /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				3B27D35F2016701E0000F6A2 /* AppDelegate.swift */,
 				3B27D3612016701E0000F6A2 /* PeopleViewController.swift */,
+				3B27D38F2016B4D70000F6A2 /* FilmViewController.swift */,
 				3B27D3632016701E0000F6A2 /* Main.storyboard */,
 				3B27D3662016701E0000F6A2 /* Assets.xcassets */,
 				3B27D3682016701E0000F6A2 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B27D3622016701E0000F6A2 /* PeopleViewController.swift in Sources */,
+				3B27D3902016B4D70000F6A2 /* FilmViewController.swift in Sources */,
 				3B27D3602016701E0000F6A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
