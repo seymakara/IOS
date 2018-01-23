@@ -15,37 +15,27 @@ class FilmViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://swapi.co/api/films/")
-        
-        let session = URLSession.shared
-        
-        let task = session.dataTask(with: url!, completionHandler: {
-            
+        StarWarsModel.getAllFilms(completionHandler: {
             data, response, error in
-            
             do {
-               
+
                 if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
                     
                     if let results = jsonResult["results"] as? NSArray {
+                        
                         for film in results {
                             let filmDict = film as! NSDictionary
                             self.films.append(filmDict["title"]! as! String)
                         }
-                        print(self.films)
                     }
                 }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
             } catch {
-                print(error)
+                print("Something went wrong")
             }
         })
-        // execute the task and wait for the response before
-        // running the completion handler. This is async!
-        task.resume()
-
     }
 
 

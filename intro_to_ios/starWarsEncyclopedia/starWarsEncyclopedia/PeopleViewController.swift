@@ -14,40 +14,25 @@ class PeopleViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // specify the url that we will be sending the GET Request to
-        let url = URL(string: "https://swapi.co/api/people/")
-        
-        // create a URLSession to handle the request tasks
-        let session = URLSession.shared
-        
-        // create a "data task" to make the request and run the completion handler
-        let task = session.dataTask(with: url!, completionHandler: {
-            // see: Swift closure expression syntax
+        StarWarsModel.getAllPeople(completionHandler: { // passing what becomes "completionHandler" in the 'getAllPeople' function definition in StarWarsModel.swift
             data, response, error in
-            // data -> JSON data, response -> headers and other meta-information, error-> if one occurred
-            // "do-try-catch" blocks execute a try statement and then use the catch statement for errors
             do {
-                // try converting the JSON object to "Foundation Types" (NSDictionary, NSArray, NSString, etc.)
+                // Try converting the JSON object to "Foundation Types" (NSDictionary, NSArray, NSString, etc.)
                 if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
-                    
                     if let results = jsonResult["results"] as? NSArray {
                         for person in results {
                             let personDict = person as! NSDictionary
                             self.people.append(personDict["name"]! as! String)
                         }
-                        print(self.people)
                     }
                 }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
             } catch {
-                print(error)
+                print("Something went wrong")
             }
         })
-        // execute the task and wait for the response before
-        // running the completion handler. This is async!
-        task.resume()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -15,6 +15,7 @@
 		3B27D3752016701F0000F6A2 /* starWarsEncyclopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27D3742016701F0000F6A2 /* starWarsEncyclopediaTests.swift */; };
 		3B27D3802016701F0000F6A2 /* starWarsEncyclopediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27D37F2016701F0000F6A2 /* starWarsEncyclopediaUITests.swift */; };
 		3B27D3902016B4D70000F6A2 /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27D38F2016B4D70000F6A2 /* FilmViewController.swift */; };
+		3B27D3922016C4EC0000F6A2 /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27D3912016C4EC0000F6A2 /* StarWarsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3B27D37F2016701F0000F6A2 /* starWarsEncyclopediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starWarsEncyclopediaUITests.swift; sourceTree = "<group>"; };
 		3B27D3812016701F0000F6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B27D38F2016B4D70000F6A2 /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		3B27D3912016C4EC0000F6A2 /* StarWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3B27D3662016701E0000F6A2 /* Assets.xcassets */,
 				3B27D3682016701E0000F6A2 /* LaunchScreen.storyboard */,
 				3B27D36B2016701E0000F6A2 /* Info.plist */,
+				3B27D3912016C4EC0000F6A2 /* StarWarsModel.swift */,
 			);
 			path = starWarsEncyclopedia;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				3B27D3622016701E0000F6A2 /* PeopleViewController.swift in Sources */,
 				3B27D3902016B4D70000F6A2 /* FilmViewController.swift in Sources */,
+				3B27D3922016C4EC0000F6A2 /* StarWarsModel.swift in Sources */,
 				3B27D3602016701E0000F6A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
