@@ -35,6 +35,17 @@ class PeopleViewController: UITableViewController {
         })
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "personDetailSegue", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! UINavigationController
+        let detail = destination.topViewController as! PersonDetailViewController
+        print("SENDER:\(sender!)")
+        detail.id = String(describing: sender!)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // if we return - sections we won't have any sections to put our rows in
         return 1
@@ -49,7 +60,7 @@ class PeopleViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create a generic cell
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
         // set the default cell label to the corresponding element in the people array
         cell.textLabel?.text = people[indexPath.row]
         // return the cell so that it can be rendered

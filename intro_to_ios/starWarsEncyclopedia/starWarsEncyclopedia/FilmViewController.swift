@@ -37,7 +37,21 @@ class FilmViewController: UITableViewController {
             }
         })
     }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "filmDetailSegue", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! UINavigationController
+        let detail = destination.topViewController as! FilmDetailViewController
+        print("SENDER:\(sender!)")
+        detail.id = String(describing: sender!)
+        
 
+    }
 
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,7 +65,7 @@ class FilmViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath)
         
         cell.textLabel?.text = films[indexPath.row]
         return cell
