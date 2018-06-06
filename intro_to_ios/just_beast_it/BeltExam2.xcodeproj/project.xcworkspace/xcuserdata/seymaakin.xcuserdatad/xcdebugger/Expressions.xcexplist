@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MainTVC.BeastButtonPressed(_:):MainTVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "beasted">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainTVC.saveItem(by:title:indexPath:):MainTVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "title">
+            </PersistentString>
+            <PersistentString
+               value = "notBeasted">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
